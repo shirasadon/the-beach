@@ -1,10 +1,14 @@
 
-function Paragraph(){
-    return(
-       ["Hey pal",
-       "what name would you call a dog that has no both legs?",
-       "well it does not matter what name you might call him",
-       "trust me he is not coming!"]
-    )
+function Paragraph(props){
+    const{paragraphs=[]}=props 
+    let allParagraph=[]  
+      for(let i=0;i<paragraphs.length;i++){
+allParagraph.push(paragraphs[i])
+      }
+  return(<div>
+ <p>{allParagraph}</p>
+ <br />
+  </div>
+ )
 }
 export default Paragraph

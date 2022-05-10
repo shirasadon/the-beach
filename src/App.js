@@ -9,7 +9,10 @@ function App() {
     <div className='App'>
       <Title></Title>
       <SubTitle></SubTitle>
-      <Paragraph></Paragraph>
+      <Paragraph paragraphs={["Hey pal",
+"what name would you call a dog that has no both legs?",
+"well it does not matter what name you might call him",
+"trust me he is not coming!"]} ></Paragraph>
     </div>
   );
 }
